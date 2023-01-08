@@ -1,0 +1,55 @@
+.home {
+    display: flex;
+    height: 100vh;
+    background-color: white;
+}
+
+.balance-card {
+    padding: 1.5rem;
+    box-shadow: 0px 0px 5px 0px var(--main-color);
+    margin: .8rem;
+    border-radius: 30px;
+    width: 600px;
+    height: 200px;
+}
+
+.balance-card h2 {
+    font-size: 2rem;
+    color: rgb(90, 1, 84);
+    margin-bottom: .7rem;
+}
+
+.button-list {
+    display: flex;
+    gap: 1rem;
+}
+
+.balance-action {
+    font-size: 1.4rem;
+    background-color: rgba(107, 2, 100, 0.826);
+    color: white;
+    padding: 5px 17px;
+    box-shadow: 0px 0px 5px 0px rgba(78, 1, 72, 0.826);
+    font-weight: 600;
+    border-radius: 20px;
+    transition: ease-in .3s;
+    margin-bottom: 1.2rem;
+}
+
+.balance-action:hover {
+    background-color: rgb(100, 2, 94);
+}
+
+.invert-button {
+    font-size: 1.3rem;
+    background-color: rgba(107, 2, 100, 0.283);
+    color: rgb(100, 2, 94);
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all .4s;
+}
+
+.invert-button:hover {
+    box-shadow: 0px 0px 4px 0px rgb(128, 1, 117);
+}

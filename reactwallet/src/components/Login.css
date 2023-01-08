@@ -1,0 +1,15 @@
+.login-input {
+    width: 340px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    font-size: 1.05rem;
+    padding: 8px 5px;
+    border: 2px solid var(--light-main-color);
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.login-input:focus {
+    border-color: var(--alt-main-color);
+}

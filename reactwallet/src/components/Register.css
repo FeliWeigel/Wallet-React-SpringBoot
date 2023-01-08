@@ -1,0 +1,128 @@
+body {
+    background-color:  var(--main-color);
+    background-image: linear-gradient(var(--main-color), rgba(241, 7, 175, 0.42) );
+}
+
+.register {
+    display: flex;
+    width: 1440px;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 2rem;
+    row-gap: var(--mb-15);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.register-form div {
+    display: flex;
+    gap: var(--mb-1);
+}
+
+.register-logo {
+    width: 100px;
+    align-self: center;
+}
+
+.register-input {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    font-size: 1.05rem;
+    padding: 8px 5px;
+    border: 2px solid var(--light-main-color);
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.register-input:focus {
+    border-color: var(--alt-main-color);
+}
+
+.input-age {
+    width: 70px;
+}
+
+.input-name, .input-lastname {
+    width: 150px;
+}
+
+.register-button {
+    color: white;
+    background-color: var(--main-color);
+    padding: 10px 0px;
+    width: 100px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: all .4s;
+}
+
+.register-button:hover {
+    box-shadow: 0px 0px 6px 0px var(--main-color);
+    transform: translateY(-.25rem);
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 5px;
+    gap: .3rem;
+    width: 320px;
+    color: rgb(132, 1, 1);
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 17px;
+    transition: ease-in-out .4s;
+}
+
+.invalid-alert {
+    border: 2.5px solid rgb(132, 1, 1);
+    box-shadow: 0px 0px 7px 0px rgb(132, 1, 1);
+}
+
+.valid-alert {
+    border: 2.5px solid rgb(9, 112, 0);
+    box-shadow: 0px 0px 7px 0px rgb(9, 112, 0);
+    width: 390px;
+    color: rgb(9, 112, 0);
+}
+
+.invalid-logo {
+    font-size: 1.85rem;
+}
+
+.valid-cont {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tologin-button {
+    display: flex;
+    color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all .4s;
+}
+
+.tologin-button:hover {
+    color: rgb(66, 2, 67);
+    transform: translateX(.2rem);
+}
+
+.arrow-logo {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}

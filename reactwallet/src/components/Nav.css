@@ -1,0 +1,57 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 18%;
+    padding-bottom: 4rem;
+    background-color: var(--main-color);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+    border-bottom: 1px solid rgba(238, 130, 238, 0.196);
+    width: 100%;
+    padding: 2.3rem 0;
+}
+
+.user-logo {
+    font-size: 1.9rem;
+    background-color: white;
+    color: var(--main-color);
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 100%;
+}
+
+.user-name {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+.list-link {
+    display: flex;
+    align-items: center;   
+    gap: .35rem;    
+    font-size: 1.4rem;
+    margin-bottom: .4rem;
+    cursor: pointer;
+    padding-left: 3rem;
+    color: rgb(243, 140, 252);
+    transition: .3s;
+}
+
+.list-link:hover {
+    transform: scale(1.01);
+    color: rgb(242, 192, 247);
+}
+
+.link-logo {
+    font-size: 1.6rem;
+}
+
