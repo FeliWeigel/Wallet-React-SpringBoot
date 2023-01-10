@@ -5,16 +5,16 @@
 }
 
 .balance-card {
-    padding: 1.5rem;
+    padding: 1.3rem 1.5rem;
     box-shadow: 0px 0px 5px 0px var(--main-color);
-    margin: .8rem;
+    margin: .65rem;
     border-radius: 30px;
-    width: 600px;
-    height: 200px;
+    width: 500px;
+    height: 180px;
 }
 
 .balance-card h2 {
-    font-size: 2rem;
+    font-size: 1.55rem;
     color: rgb(90, 1, 84);
     margin-bottom: .7rem;
 }
@@ -25,7 +25,7 @@
 }
 
 .balance-action {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     background-color: rgba(107, 2, 100, 0.826);
     color: white;
     padding: 5px 17px;
@@ -41,7 +41,7 @@
 }
 
 .invert-button {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     background-color: rgba(107, 2, 100, 0.283);
     color: rgb(100, 2, 94);
     font-weight: 600;
@@ -52,4 +52,106 @@
 
 .invert-button:hover {
     box-shadow: 0px 0px 4px 0px rgb(128, 1, 117);
+}
+
+.invest-card {
+    padding: 1.2rem 2rem 2rem 3rem;
+    box-shadow: 0px 0px 5px 0px var(--main-color);
+    border-radius: 23px;
+    margin: .8rem .3rem;
+    position: relative;
+}
+
+.invest-title {
+    position: absolute;
+    background-color: rgb(128, 1, 117);
+    left: -.55rem;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 15px;
+}
+
+.invest-img {
+    margin-top: 4.5rem;
+    height: 270px;
+    width: 400px;
+    margin-bottom: 1rem;
+}
+
+.invest-info {
+    width: 495px;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.765);
+    margin-bottom: 1rem;
+}
+
+.invest-buttons {
+    display: flex;
+    gap: .55rem;
+}
+
+.invest-type {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    background-color: white;
+    color: rgb(128, 1, 117);
+    border: 2px solid rgb(165, 0, 154);
+    gap: .1rem;
+    padding: 4px 13px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: ease-in-out .4s;
+}
+
+.invest-type:hover {
+    transform: translateY(-.25rem);
+    box-shadow: 0px 0px 5px 0px var(--main-color);
+}
+
+.invest-but-logo {
+    font-size: 1.4rem;
+}
+
+.last-changes-card {
+    padding: 1rem;
+    box-shadow: 0px 0px 5px 0px var(--main-color);
+    margin: .3rem .4rem;
+    border-radius: 23px;
+}
+
+.last-changes-title {
+    margin-bottom: .7rem;
+    color: rgb(90, 0, 84);
+}
+
+.crypto {
+    display: flex;
+    justify-content: space-between;
+    width: 465px;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1.4px solid rgba(88, 0, 83, 0.329);
+}
+
+.crypto-left, .crypto-right {
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+}
+
+.crypto-img {
+    width: 27px;
+}
+
+.crypto-symbol{
+    text-transform: uppercase;
+    color: rgb(57, 1, 54);
+}
+
+.crypto-name {
+    font-size: 1.1rem;
+    color: rgb(100, 2, 94);
 }
