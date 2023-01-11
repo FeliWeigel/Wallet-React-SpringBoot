@@ -1,20 +1,24 @@
 .home {
     display: flex;
-    height: 100vh;
-    background-color: white;
+    height: 102vh;
+    background-color: white;;
+}
+
+.invest-card, .balance-card,
+.last-changes-card, .services-card{
+    box-shadow: 0px 0px 5px 0px var(--main-color);
 }
 
 .balance-card {
-    padding: 1.5rem;
-    box-shadow: 0px 0px 5px 0px var(--main-color);
-    margin: .8rem;
+    padding: 1.3rem 1.5rem;
+    margin: .50rem;
     border-radius: 30px;
-    width: 600px;
-    height: 200px;
+    width: 500px;
+    height: 180px;
 }
 
 .balance-card h2 {
-    font-size: 2rem;
+    font-size: 1.55rem;
     color: rgb(90, 1, 84);
     margin-bottom: .7rem;
 }
@@ -25,7 +29,7 @@
 }
 
 .balance-action {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     background-color: rgba(107, 2, 100, 0.826);
     color: white;
     padding: 5px 17px;
@@ -41,7 +45,7 @@
 }
 
 .invert-button {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     background-color: rgba(107, 2, 100, 0.283);
     color: rgb(100, 2, 94);
     font-weight: 600;
@@ -52,4 +56,185 @@
 
 .invert-button:hover {
     box-shadow: 0px 0px 4px 0px rgb(128, 1, 117);
+}
+
+.invest-card {
+    padding: 1.2rem 2.4rem 1rem 2.4rem;
+    border-radius: 23px;
+    margin: .55rem .3rem;
+    position: relative;
+}
+
+.invest-title {
+    position: absolute;
+    background-color: rgb(128, 1, 117);
+    left: -.55rem;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 15px;
+}
+
+.invest-img {
+    margin-top: 4.5rem;
+    height: 270px;
+    width: 400px;
+    margin-bottom: 1rem;
+}
+
+.invest-info {
+    width: 495px;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.765);
+    margin-bottom: 1rem;
+}
+
+.invest-buttons {
+    display: flex;
+    gap: .55rem;
+}
+
+.invest-type {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    background-color: white;
+    color: rgb(128, 1, 117);
+    border: 2px solid rgb(165, 0, 154);
+    gap: .1rem;
+    padding: 4px 13px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: ease-in-out .4s;
+}
+
+.invest-type:hover {
+    transform: translateY(-.25rem);
+    box-shadow: 0px 0px 5px 0px var(--main-color);
+}
+
+.invest-but-logo {
+    font-size: 1.4rem;
+}
+
+.last-changes-card {
+    padding: .8rem 1rem 2.3rem 1rem;
+    margin: .3rem .5rem;
+    border-radius: 23px;
+    position: relative;
+}
+
+.last-changes-title {
+    margin-bottom: .5rem;
+    color: rgb(90, 0, 84);
+}
+
+.cryptos {
+    margin-bottom: .5rem;
+}
+
+.crypto {
+    display: flex;
+    justify-content: space-between;
+    width: 465px;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1.4px solid rgba(88, 0, 83, 0.329);
+}
+
+.crypto-left, .crypto-right {
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+}
+
+.crypto-img {
+    width: 27px;
+}
+
+.crypto-symbol{
+    text-transform: uppercase;
+    color: rgb(57, 1, 54);
+}
+
+.crypto-name {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(100, 2, 94);
+}
+
+.crypto-price {
+    color: rgb(43, 1, 40);
+    font-size: 1.1rem;
+}
+
+.arrow-logo {
+    font-size: 1.4rem;
+}
+
+.crypto-24hs {
+    font-size: 1.1rem;
+    display: flex;
+    gap: .4rem;
+    align-items: center;
+}
+
+.crypto-24hs span {
+    color: rgb(43, 1, 40);;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.last-changes-button {
+    position: absolute;
+    right: 1rem;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 500;
+    font-size: 1.05rem;
+    border-radius: 15px;
+    padding: 4px 12px;
+    transition: .4s;
+}
+
+.last-changes-button:hover {
+    background-color: rgb(165, 3, 151);
+}
+
+.services-card {
+    display: flex;
+    padding: .70rem 0;
+    border-radius: 18px;
+    justify-content: center;
+    gap: .5rem;
+    margin-left: 3px;
+}
+
+.services-button {
+    display: flex;
+    align-items: center;
+    padding: 5px 13px;
+    gap: .3rem;
+    background-color: var(--main-color);
+    font-size: .95rem;
+    color: white;
+    border-radius: 13px;
+    transition: ease-in-out .3s;
+}
+
+.services-button:hover {
+    transform: scale(1.01);
+    background-color:  rgb(165, 3, 151);
+}
+
+.services-logo {
+    font-size: 1.2rem;
 }
