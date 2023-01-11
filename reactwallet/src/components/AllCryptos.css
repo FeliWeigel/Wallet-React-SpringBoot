@@ -1,0 +1,12 @@
+.crypto-table {
+    background-color: white;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.cryptos h2 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}

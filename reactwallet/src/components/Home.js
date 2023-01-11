@@ -2,6 +2,7 @@ import axios from "axios"
 import React from "react"
 import { Link } from "react-router-dom"
 import investImg from "../assets/invest.png"
+import Cryptos from "../elements/Cryptos"
 import "../index.css"
 import "./Home.css"
 import Nav from "./Nav"
@@ -42,22 +43,12 @@ export default class HomeCom extends React.Component{
                     
                             {this.state.cryptos.map(crypto => {
                                 return(
-                                    <tr className="crypto">
-                                        <div className="crypto-left">    
-                                            <th><img className="crypto-img" src={crypto.image} alt="error" /></th>
-                                            <th className="crypto-symbol">{crypto.symbol}</th>
-                                            <th className="crypto-name">{crypto.id}</th>
-                                        </div>
-                                        <div className="crypto-right">
-                                            <th className="crypto-price">${crypto.current_price}</th>
-                                            <th className="crypto-24hs">{crypto.price_change_percentage_24h}(%)</th>
-                                        </div>
-                                    </tr>
+                                    <Cryptos crypto={crypto}/>
                                 )
                             })} 
                         </table>
                         
-                        <button className="last-changes-button">View All</button>
+                        <Link to="cryptos/all"><button className="last-changes-button">View All</button></Link>
                     </div>
                 </div>
     
@@ -66,12 +57,17 @@ export default class HomeCom extends React.Component{
                         <h2 className="invest-title">A new way to invest!</h2>
                         <img  className="invest-img" src={investImg} alt="error img" />
                         <p className="invest-info">Find here, new alternatives to the already old and well-known ways of investing your money, either in fiat or cryptocurrencies
-                        with returns of up to 10% APY effortlessly and with little risk.</p>
+                        with returns of up to 10% APY effortlessly and with little risk. Start now, and be part of the new generation of investors.</p>
                         <div className="invest-buttons">
                             <Link to="/"><button className="invest-type"><i className='bx bxs-bar-chart-alt-2 invest-but-logo'></i>Simple Earn</button></Link>
                             <Link to="/"><button className="invest-type"><i className='bx bx-refresh invest-but-logo'></i>Automatic Investment</button></Link>
                             <Link to="/"><button className="invest-type"><i className='bx bx-wallet invest-but-logo'></i>Flexible Savings</button></Link>
                         </div>
+                    </div>
+                    <div className="services-card">
+                        <button className="services-button"><i className='bx bx-support services-logo'></i>Customer Support</button>
+                        <button className="services-button"><i className='bx bxs-lock services-logo'></i>Use and Privacy Policies</button>
+                        <button className="services-button"><i className='bx bxs-sad services-logo' ></i>Regret Section</button>
                     </div>
                 </div>
             </div>
