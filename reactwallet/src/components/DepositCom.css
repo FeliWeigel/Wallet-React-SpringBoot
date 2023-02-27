@@ -1,0 +1,58 @@
+.deposit {
+    display: flex;
+    height: 100vh;
+}
+
+.deposit-content {
+    display: flex;
+    padding-top: 4.5rem;
+    background-color: white;
+    width: 85%;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+}
+
+.deposit-content h2 {
+    color: rgba(0, 0, 0, 0.797);
+    font-size: 2.2rem;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.deposit-content h2::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(163, 0, 152);
+    width: 42px;
+    height: 2.5px;
+    bottom: -.35rem;
+    left: .1rem;
+}
+
+.deposit-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.deposit-card {
+    display: flex;
+    font-size: 1.25rem;
+    align-items: center;
+    gap: .5rem;
+    padding: 17px 70px 17px 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3.5px 0px rgb(134, 0, 125);
+    transition: .4s;
+}
+
+.deposit-card:hover {
+    transform: scale(1.01);
+}
+
+.dep-card-logo {
+    font-size: 2rem;
+    color: rgb(110, 0, 103);
+}

@@ -4,34 +4,43 @@ import { Link } from "react-router-dom"
 import investImg from "../assets/invest.png"
 import Cryptos from "../elements/Cryptos"
 import "../index.css"
+import { apiUrl } from "../services/urlBase"
 import "./Home.css"
 import Nav from "./Nav"
 export default class HomeCom extends React.Component{
 
     state = {
-        cryptos: []
+        cryptos: [],
     }
 
     componentDidMount(){
-        const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=7&page=1&sparkline=false&price_change_percentage=24hs"
-        axios.get(url)
+        const cryptoUrl = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=7&page=1&sparkline=false&price_change_percentage=24hs"
+        const userUrl = apiUrl + "users/user";
+        
+        axios.get(cryptoUrl)
         .then(res => {
             this.setState({
                 cryptos: res.data
             })
+        })
+
+        axios.get(userUrl)
+        .then(res => {
             console.log(res.data)
         })
+
     }
 
     render(){
         return (
+            
             <div className="home">
                 <Nav/>
                 <div className="left">
                     <div className="balance-card">
                         <h2>Total Balance: $65.000(USD)</h2>
                         <div className="button-list">
-                            <Link to="/"><button className="balance-action">Deposit</button></Link>
+                            <Link to="/deposit"><button className="balance-action">Deposit</button></Link>
                             <Link to="/"><button className="balance-action">Subtract</button></Link>
                             <Link to="/"><button className="balance-action">Convert</button></Link>
                         </div>

@@ -79,11 +79,11 @@ export default class RegisterComponent extends React.Component{
                     <input type="password" name="password" placeholder="Password" onChange={this.handleChange} className="register-input input-password"/>
                     <button onClick={this.handleButton} className="register-button">Register</button>
                     
-                    {this.state.error === true ? <span className="invalid-alert alert"><i class='bx bx-error-circle classname invalid-logo'></i>{this.state.errorMsg}</span>: null} 
+                    {this.state.error === true ? <span className="invalid-alert alert"><i className='bx bx-error-circle classname invalid-logo'></i>{this.state.errorMsg}</span>: null} 
                     {
                         this.state.errorMsg === "You have successfully registered!" ? 
                         <div className="valid-cont">
-                            <span className="valid-alert alert"><i class='bx bx-error-circle classname invalid-logo'></i>{this.state.errorMsg}</span>
+                            <span className="valid-alert alert"><i className='bx bx-error-circle classname invalid-logo'></i>{this.state.errorMsg}</span>
                             <Link to="/login"><button className="tologin-button">Log in here <i className='bx bx-chevrons-right arrow-logo'></i></button></Link>
                         </div>  
                         : null

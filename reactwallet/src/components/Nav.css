@@ -44,6 +44,7 @@
     padding-left: 3rem;
     color: rgb(243, 140, 252);
     transition: .3s;
+    background-color: transparent;
 }
 
 .list-link:hover {

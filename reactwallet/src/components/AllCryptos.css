@@ -1,12 +1,87 @@
+.cryptos {
+    position: relative;
+}
+
+.back-logo {
+    position: absolute;
+    font-size: 2rem;
+    color: rgb(222, 126, 204);
+    top: 0;
+    left: 3rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.back-logo:hover {
+    color: rgb(184, 16, 153);
+}
+
 .crypto-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
+    width: 1200px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 2rem;
 }
 
 .cryptos h2 {
     text-align: center;
     color: white;
     font-size: 2rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.crypto-cols {
+    width: 1150px;
+    margin-bottom: .7rem;
+}
+
+.crypto-cols tr {
+    display: flex;
+    padding: 0px 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(151, 1, 136, 0.623);
+    justify-content: space-between;
+}
+
+.cols-left, .cols-right {
+    display: flex;
+    gap: 2.3rem;
+    font-size: 1.2rem;
+}
+
+.allcrypto {
+    width: 1100px;
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1.2px solid rgba(118, 3, 111, 0.432);
+    justify-content: space-between;
+}
+
+.allcrypto-left, .allcrypto-right {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.allcrypto-img {
+    width: 30px;
+}
+
+.allcrypto-symbol {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.allcrypto-name {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.849);
+}
+
+
+
+

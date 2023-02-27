@@ -7,6 +7,7 @@ import { apiUrl } from "../services/urlBase"
 import axios from "axios"
 import { Navigate } from "react-router-dom"
 
+
 export default class LoginCom extends React.Component{
 
     state = {
@@ -14,6 +15,7 @@ export default class LoginCom extends React.Component{
             "email": "",
             "password": ""
         },
+        isLogged: false,
         error: false,
         errorMsg: ""
     }
@@ -33,12 +35,16 @@ export default class LoginCom extends React.Component{
         console.log(e.target.value)
     }
 
-    handleButton = async () => {
+    handleButton = async ({credentials}) => {
         const url = apiUrl + "users/login";
-        await axios.post(url, this.state.form)
+        credentials = this.state.form
+        await axios.post(url, credentials)
         .then(res => {
-            if(res.data != "login fail"){
+            if(res.data !== "login fail"){
+                let token = res.data;
+                localStorage.setItem("auth", JSON.stringify(token))
                 this.setState({
+                    isLogged: true,
                     error: false,
                     errorMsg: "You have successfully logged!"
                 })
@@ -63,9 +69,9 @@ export default class LoginCom extends React.Component{
 
                     <input type="email" name="email" placeholder="Email" onChange={this.handleChange} className="login-input input-email"/>
                     <input type="password" name="password" placeholder="Password" onChange={this.handleChange} className="login-input input-password"/>
-                    <button onClick={this.handleButton} className="register-button">Register</button>
+                    <button onClick={this.handleButton} className="register-button">Log in</button>
                     {this.state.error === true ? <span className="invalid-alert alert"><i className='bx bx-error-circle classname invalid-logo'></i>{this.state.errorMsg}</span> : null}
-                    {this.state.errorMsg === "You have successfully logged!" ? <Navigate to="/"/> : null}
+                    {this.state.isLogged === true ? <Navigate to="/"/> : false}
                 </form>
             </div>
         )

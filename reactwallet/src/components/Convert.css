@@ -1,0 +1,163 @@
+.convert-main {
+    display: flex;
+}
+
+.convert {
+    position: relative;
+    padding: 4rem 3rem;
+    background-color: white;
+    width: 82%;
+}
+
+.convert h2 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.874);
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.convert h2::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    margin-left: 1px;
+    background-color: rgb(158, 3, 127);
+    width: 35px;
+    height: 2.7px;
+
+}
+
+.convert-tool {
+    width: 580px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 4rem;
+    border-radius: 20px;
+    gap: 2rem;
+    box-shadow: 0px 0px 5px 1px rgba(164, 0, 131, 0.838);
+}
+
+.converter {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.convert-logo {
+    font-size: 2.4rem;
+    color: rgb(113, 0, 91);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.convert-logo:hover {
+    color: rgb(192, 26, 158);
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    border: 2.3px solid rgb(113, 0, 91);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.currency button {
+    background: none;
+}
+
+.currency-i {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: rgb(113, 0, 91);
+}
+
+.currency-i:hover {
+    color: rgb(184, 5, 148);
+}
+
+.currency-logo {
+    width: 33px;
+}
+
+.currency-symbol {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.888);
+}
+
+.convert-amount {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.amount {
+    color: rgb(82, 0, 65);
+    font-size: 1.7rem;
+}
+
+.amount-input {
+    width: 120px;
+    color: black;
+    font-size: 1.78rem;
+    position: relative;
+}
+
+.list-quit {
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.9rem;
+    color: rgba(229, 116, 229, 0.795);
+    right: 2rem;
+    top: 2rem;
+    transition: .3s;
+}
+
+.list-quit:hover {
+    color: rgb(139, 0, 111);
+}
+
+.convert-list {
+    width: 82%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.66);
+}
+
+.convert-list ul {
+    margin: 0 auto;
+    width: 600px;
+    margin-top: 6rem;
+    background-color: white;
+    padding: 2rem;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border-bottom: 1.5px solid rgba(141, 6, 114, 0.317);
+    gap: .5rem;
+    padding: 6px 0;
+    font-size: 1.3rem;
+    transition: all .5s;
+}
+
+.list-item:hover {
+    border-bottom: 1.5px solid rgb(147, 0, 118);
+}
+
+.list-item img {
+    width: 30px;
+}
+
+.list-item h4 {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.861);
+}
